@@ -1,0 +1,12 @@
+# Drink
+
+
+## Fields
+
+| Field                                                                         | Type                                                                          | Required                                                                      | Description                                                                   |
+| ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| `name`                                                                        | *str*                                                                         | :heavy_check_mark:                                                            | The name of the drink.                                                        |
+| `price`                                                                       | *float*                                                                       | :heavy_check_mark:                                                            | The price of one unit of the drink in US cents.                               |
+| `product_code`                                                                | *Optional[str]*                                                               | :heavy_minus_sign:                                                            | The product code of the drink, only available when authenticated.             |
+| `stock`                                                                       | *Optional[int]*                                                               | :heavy_minus_sign:                                                            | The number of units of the drink in stock, only available when authenticated. |
+| `type`                                                                        | [Optional[components.DrinkType]](../../models/components/drinktype.md)        | :heavy_minus_sign:                                                            | The type of drink.                                                            |
