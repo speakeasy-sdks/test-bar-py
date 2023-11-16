@@ -105,7 +105,6 @@ if res.object is not None:
     # handle response
     pass
 ```
-
 <!-- End Error Handling -->
 
 <!-- Start Server Selection -->
@@ -185,7 +184,6 @@ s = test_bar.TestBar(client: http_client)
 <!-- End Custom HTTP Client -->
 
 <!-- Start Authentication -->
-
 ## Authentication
 
 ### Per-Client Security Schemes
