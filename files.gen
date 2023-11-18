@@ -12,6 +12,7 @@ src/test_bar/utils/__init__.py
 src/test_bar/utils/retries.py
 src/test_bar/utils/utils.py
 src/test_bar/models/errors/sdkerror.py
+tests/helpers.py
 src/test_bar/models/operations/authenticate.py
 src/test_bar/models/operations/getdrink.py
 src/test_bar/models/operations/listdrinks.py
