@@ -39,7 +39,6 @@ src/test_bar/models/operations/__init__.py
 src/test_bar/models/components/__init__.py
 src/test_bar/models/callbacks/__init__.py
 src/test_bar/models/webhooks/__init__.py
-USAGE.md
 docs/models/operations/authenticaterequestbody.md
 docs/models/operations/authenticateresponsebody.md
 docs/models/operations/authenticateresponse.md
@@ -77,4 +76,5 @@ docs/sdks/drinks/README.md
 docs/sdks/ingredients/README.md
 docs/sdks/orders/README.md
 docs/sdks/config/README.md
+USAGE.md
 .gitattributes
