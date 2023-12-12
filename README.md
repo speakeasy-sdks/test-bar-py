@@ -32,7 +32,7 @@ import test_bar
 from test_bar.models import operations
 
 s = test_bar.TestBar(
-    api_key="",
+    api_key="<YOUR_API_KEY_HERE>",
 )
 
 
@@ -86,7 +86,7 @@ import test_bar
 from test_bar.models import operations
 
 s = test_bar.TestBar(
-    api_key="",
+    api_key="<YOUR_API_KEY_HERE>",
 )
 
 req = operations.AuthenticateRequestBody()
@@ -128,7 +128,7 @@ from test_bar.models import operations
 
 s = test_bar.TestBar(
     server="customer",
-    api_key="",
+    api_key="<YOUR_API_KEY_HERE>",
 )
 
 req = operations.AuthenticateRequestBody()
@@ -155,7 +155,7 @@ from test_bar.models import operations
 
 s = test_bar.TestBar(
     server_url="https://speakeasy.bar",
-    api_key="",
+    api_key="<YOUR_API_KEY_HERE>",
 )
 
 req = operations.AuthenticateRequestBody()
@@ -201,7 +201,7 @@ import test_bar
 from test_bar.models import operations
 
 s = test_bar.TestBar(
-    api_key="",
+    api_key="<YOUR_API_KEY_HERE>",
 )
 
 req = operations.AuthenticateRequestBody()

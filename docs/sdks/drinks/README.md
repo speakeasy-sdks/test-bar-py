@@ -21,7 +21,7 @@ import test_bar
 from test_bar.models import operations
 
 s = test_bar.TestBar(
-    api_key="",
+    api_key="<YOUR_API_KEY_HERE>",
 )
 
 
@@ -59,9 +59,7 @@ Get a list of drinks, if authenticated this will include stock levels and produc
 import test_bar
 from test_bar.models import components, operations
 
-s = test_bar.TestBar(
-    api_key="",
-)
+s = test_bar.TestBar()
 
 
 res = s.drinks.list_drinks(drink_type=components.DrinkType.SPIRIT)

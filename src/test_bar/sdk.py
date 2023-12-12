@@ -9,7 +9,7 @@ from .orders import Orders
 from .sdkconfiguration import SDKConfiguration, ServerEnvironment
 from test_bar import utils
 from test_bar.models import components
-from typing import Callable, Dict, Union
+from typing import Dict
 
 class TestBar:
     r"""The Speakeasy Bar: A bar that serves drinks.
@@ -29,7 +29,7 @@ class TestBar:
     sdk_configuration: SDKConfiguration
 
     def __init__(self,
-                 api_key: Union[str,Callable[[], str]],
+                 api_key: str ,
                  environment: ServerEnvironment = None,
                  organization: str = None,
                  server: str = None,
