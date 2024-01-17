@@ -9,7 +9,7 @@ from .orders import Orders
 from .sdkconfiguration import SDKConfiguration, ServerEnvironment
 from test_bar import utils
 from test_bar.models import components
-from typing import Dict
+from typing import Callable, Dict, Union
 
 class TestBar:
     r"""The Speakeasy Bar: A bar that serves drinks.
@@ -29,7 +29,7 @@ class TestBar:
     sdk_configuration: SDKConfiguration
 
     def __init__(self,
-                 api_key: str ,
+                 api_key: Union[str, Callable[[], str]],
                  environment: ServerEnvironment = None,
                  organization: str = None,
                  server: str = None,
@@ -41,7 +41,7 @@ class TestBar:
         """Instantiates the SDK configuring it with the provided parameters.
         
         :param api_key: The api_key required for authentication
-        :type api_key: Union[str,Callable[[], str]]
+        :type api_key: Union[str, Callable[[], str]]
         :param environment: Allows setting the environment variable for url substitution
         :type environment: ServerEnvironmentmodels.ServerEnvironment
         :param organization: Allows setting the organization variable for url substitution
@@ -60,7 +60,11 @@ class TestBar:
         if client is None:
             client = requests_http.Session()
         
-        security = components.Security(api_key = api_key)
+        if callable(api_key):
+            def security():
+                return components.Security(api_key = api_key())
+        else:
+            security = components.Security(api_key = api_key)
         
         if server_url is not None:
             if url_params is not None:
