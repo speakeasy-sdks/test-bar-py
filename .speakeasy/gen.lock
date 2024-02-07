@@ -4,15 +4,15 @@ management:
   docChecksum: 8f27a31f7c8db7031d59e44e22e0a9d2
   docVersion: 1.0.0
   speakeasyVersion: internal
-  generationVersion: 2.248.1
-  releaseVersion: 0.4.0
-  configChecksum: d089348fa565e36038271db7f5514d1a
+  generationVersion: 2.250.12
+  releaseVersion: 0.5.0
+  configChecksum: cb4387b83edb1a2a38d0495cf7c5abe7
   repoURL: https://github.com/speakeasy-sdks/test-bar-py.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/test-bar-py.git
 features:
   python:
-    core: 4.4.4
+    core: 4.4.5
     errors: 2.81.8
     examples: 2.81.3
     flattening: 2.81.1
