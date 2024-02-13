@@ -17,7 +17,6 @@ Get a list of ingredients, if authenticated this will include stock levels and p
 
 ```python
 import test_bar
-from test_bar.models import operations
 
 s = test_bar.TestBar(
     api_key="<YOUR_API_KEY_HERE>",

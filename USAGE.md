@@ -1,7 +1,6 @@
 <!-- Start SDK Example Usage [usage] -->
 ```python
 import test_bar
-from test_bar.models import operations
 
 s = test_bar.TestBar(
     api_key="<YOUR_API_KEY_HERE>",

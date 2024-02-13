@@ -17,7 +17,7 @@ Create an order for a drink.
 
 ```python
 import test_bar
-from test_bar.models import callbacks, components, operations
+from test_bar.models import components
 
 s = test_bar.TestBar(
     api_key="<YOUR_API_KEY_HERE>",

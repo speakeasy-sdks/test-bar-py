@@ -29,7 +29,6 @@ pip install git+https://github.com/speakeasy-sdks/test-bar-py.git
 
 ```python
 import test_bar
-from test_bar.models import operations
 
 s = test_bar.TestBar(
     api_key="<YOUR_API_KEY_HERE>",
@@ -83,7 +82,7 @@ Handling errors in this SDK should largely match your expectations.  All operati
 
 ```python
 import test_bar
-from test_bar.models import operations
+from test_bar.models import errors, operations
 
 s = test_bar.TestBar(
     api_key="<YOUR_API_KEY_HERE>",
@@ -95,10 +94,10 @@ res = None
 try:
     res = s.authentication.authenticate(req)
 except errors.APIError as e:
-    print(e)  # handle exception
+    # handle exception
     raise(e)
 except errors.SDKError as e:
-    print(e)  # handle exception
+    # handle exception
     raise(e)
 
 if res.object is not None:

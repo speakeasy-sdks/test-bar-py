@@ -18,7 +18,6 @@ Get a drink by name, if authenticated this will include stock levels and product
 
 ```python
 import test_bar
-from test_bar.models import operations
 
 s = test_bar.TestBar(
     api_key="<YOUR_API_KEY_HERE>",
@@ -57,7 +56,7 @@ Get a list of drinks, if authenticated this will include stock levels and produc
 
 ```python
 import test_bar
-from test_bar.models import components, operations
+from test_bar.models import components
 
 s = test_bar.TestBar()
 
