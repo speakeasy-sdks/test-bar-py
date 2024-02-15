@@ -24,7 +24,7 @@ s = test_bar.TestBar(
 )
 
 
-res = s.drinks.get_drink(name='string')
+res = s.drinks.get_drink(name='<value>')
 
 if res.drink is not None:
     # handle response

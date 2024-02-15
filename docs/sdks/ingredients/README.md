@@ -24,7 +24,7 @@ s = test_bar.TestBar(
 
 
 res = s.ingredients.list_ingredients(ingredients=[
-    'string',
+    '<value>',
 ])
 
 if res.classes is not None:

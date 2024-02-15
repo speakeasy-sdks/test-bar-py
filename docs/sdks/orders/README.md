@@ -30,7 +30,7 @@ res = s.orders.create_order(request_body=[
         quantity=26535,
         type=components.OrderType.DRINK,
     ),
-], callback_url='string')
+], callback_url='<value>')
 
 if res.order is not None:
     # handle response
