@@ -19,9 +19,7 @@ Authenticate with the API by providing a username and password.
 import test_bar
 from test_bar.models import operations
 
-s = test_bar.TestBar(
-    api_key="<YOUR_API_KEY_HERE>",
-)
+s = test_bar.TestBar()
 
 req = operations.AuthenticateRequestBody()
 

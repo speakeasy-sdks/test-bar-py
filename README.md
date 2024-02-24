@@ -84,9 +84,7 @@ Handling errors in this SDK should largely match your expectations.  All operati
 import test_bar
 from test_bar.models import errors, operations
 
-s = test_bar.TestBar(
-    api_key="<YOUR_API_KEY_HERE>",
-)
+s = test_bar.TestBar()
 
 req = operations.AuthenticateRequestBody()
 
@@ -127,7 +125,6 @@ from test_bar.models import operations
 
 s = test_bar.TestBar(
     server="customer",
-    api_key="<YOUR_API_KEY_HERE>",
 )
 
 req = operations.AuthenticateRequestBody()
@@ -154,7 +151,6 @@ from test_bar.models import operations
 
 s = test_bar.TestBar(
     server_url="https://speakeasy.bar",
-    api_key="<YOUR_API_KEY_HERE>",
 )
 
 req = operations.AuthenticateRequestBody()
