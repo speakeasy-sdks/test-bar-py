@@ -58,9 +58,7 @@ Get a list of drinks, if authenticated this will include stock levels and produc
 import test_bar
 from test_bar.models import components
 
-s = test_bar.TestBar(
-    api_key="<YOUR_API_KEY_HERE>",
-)
+s = test_bar.TestBar()
 
 
 res = s.drinks.list_drinks(drink_type=components.DrinkType.SPIRIT)
