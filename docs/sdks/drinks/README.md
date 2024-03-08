@@ -29,6 +29,7 @@ res = s.drinks.get_drink(name='<value>')
 if res.drink is not None:
     # handle response
     pass
+
 ```
 
 ### Parameters
@@ -66,6 +67,7 @@ res = s.drinks.list_drinks(drink_type=components.DrinkType.SPIRIT)
 if res.classes is not None:
     # handle response
     pass
+
 ```
 
 ### Parameters

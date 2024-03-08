@@ -12,5 +12,6 @@ res = s.drinks.get_drink(name='<value>')
 if res.drink is not None:
     # handle response
     pass
+
 ```
 <!-- End SDK Example Usage [usage] -->
