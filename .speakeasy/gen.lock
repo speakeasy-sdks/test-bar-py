@@ -3,10 +3,10 @@ id: fba5ac95-eaea-4fe3-a9df-64c892ddd700
 management:
   docChecksum: 8f27a31f7c8db7031d59e44e22e0a9d2
   docVersion: 1.0.0
-  speakeasyVersion: 1.204.1
-  generationVersion: 2.279.1
-  releaseVersion: 0.8.0
-  configChecksum: 88697284c29965237d773816f36daaf5
+  speakeasyVersion: 1.207.1
+  generationVersion: 2.280.6
+  releaseVersion: 0.8.1
+  configChecksum: cf767dbec84ba0b369ee13ab975dd6dd
   repoURL: https://github.com/speakeasy-sdks/test-bar-py.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/test-bar-py.git
@@ -18,7 +18,7 @@ features:
     examples: 2.81.3
     flattening: 2.81.1
     globalSecurity: 2.83.4
-    globalServerURLs: 2.82.1
+    globalServerURLs: 2.82.2
     inputOutputModels: 2.83.1
     responseFormat: 0.1.0
     serverIDs: 2.81.1
